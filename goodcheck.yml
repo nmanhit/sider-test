@@ -23,7 +23,7 @@ rules:
 
   - id: using.prefix.kuc
     pattern:
-      regexp: ^\.(?!(kuc-))
+      regexp: \.(?!(kuc-))
     message: |
       Please start with kuc prefix
       ex: .kuc-dropdown
