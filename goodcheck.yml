@@ -13,6 +13,17 @@ rules:
       }
     glob: "*.ts"
 
+  - id: dom.structure
+    pattern:
+      regexp: id="(?!\${this._GUID}-)[^"]+"
+    message: |
+      Please put uuid to id using _generateGUID function
+      ex: <div
+            class="kuc-multi-choice__label"
+            id="${this._GUID}-label">
+          </div>
+    glob: "*.ts"
+
   - id: color.code.not.be.6.digits
     pattern:
       regexp: \#(?![a-z0-9]{6})
