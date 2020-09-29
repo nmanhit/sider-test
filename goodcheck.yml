@@ -31,11 +31,3 @@ rules:
       Color codes should be written in lowercase and 6 digits
       ex: #d4d7d7;
     glob: "*.ts"
-
-  - id: using.prefix.kuc
-    pattern:
-      regexp: \.(?!(kuc-))
-    message: |
-      Please start with kuc prefix
-      ex: .kuc-dropdown
-    glob: "*.ts"
